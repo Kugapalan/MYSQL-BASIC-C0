@@ -1,38 +1,14 @@
 -- Opdracht 1 
 127.0.0.1/mod-mysql-basic-worldhappiness/jaar2015/		http://localhost/phpmyadmin/index.php?route=/database/sql&db=mod-mysql-basic-worldhappiness
 
-   Weergave van records 0 - 24 (158 totaal, Query duurde 0,0025 seconden.)
+   Weergave van records 0 -  0 (1 totaal, Query duurde 0,0037 seconden.)
 
 
-SELECT country,rank FROM jaar2015;
+SELECT * FROM jaar2015 WHERE rank="7";
 
 
-country	rank	
-Switzerland	1	
-Iceland	2	
-Denmark	3	
-Norway	4	
-Canada	5	
-Finland	6	
-Netherlands	7	
-Sweden	8	
-New Zealand	9	
-Australia	10	
-Israel	11	
-Costa Rica	12	
-Austria	13	
-Mexico	14	
-United States	15	
-Brazil	16	
-Luxembourg	17	
-Ireland	18	
-Belgium	19	
-United Arab Emirates	20	
-United Kingdom	21	
-Oman	22	
-Venezuela	23	
-Singapore	24	
-Panama	25	
+
+Netherlands	Western Europe	7	7378	
 
 -- Opdracht 2 
 127.0.0.1/mod-mysql-basic-worldhappiness/jaar2016/		http://localhost/phpmyadmin/index.php?route=/database/sql&db=mod-mysql-basic-worldhappiness
