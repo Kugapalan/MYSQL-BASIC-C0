@@ -166,40 +166,7 @@ SELECT COUNT(*) FROM videogamesales WHERE publisher = "nintendo";
 228	
 
 -- Opdracht 9
-127.0.0.1/mod-mysql-basic-opdracht/videogamesales/		http://localhost/phpmyadmin/index.php?route=/database/sql&db=mod-mysql-basic-opdracht
-
-   Weergave van records 0 - 24 (74 totaal, Query duurde 0,0008 seconden.)
-
-
-SELECT name, year FROM videogamesales WHERE genre = "racing" AND publisher = "Nintendo" OR publisher = "Activision";
-
-
-name	year	
-Mario Kart Wii 	2008	
-Mario Kart DS 	2005	
-Call of Duty: Modern Warfare 3 	2011	
-Call of Duty: Black Ops 	2010	
-Call of Duty: Black Ops 3 	2015	
-Call of Duty: Modern Warfare 2 	2009	
-Call of Duty: Modern Warfare 3 	2011	
-Call of Duty: Black Ops 	2010	
-Mario Kart 7 	2011	
-Call of Duty: Modern Warfare 2 	2009	
-Call of Duty: Ghosts 	2013	
-Call of Duty: Ghosts 	2013	
-Call of Duty 4: Modern Warfare 	2007	
-Call of Duty: Advanced Warfare 	2014	
-Call of Duty: World at War 	2008	
-Call of Duty: Black Ops 3 	2015	
-Call of Duty 4: Modern Warfare 	2007	
-World of Warcraft 	2004	
-Destiny 	2014	
-Call of Duty: World at War 	2008	
-Call of Duty: Advanced Warfare 	2014	
-Tony Hawk's Pro Skater 	1999	
-Guitar Hero III: Legends of Rock 	2007	
-StarCraft II: Wings of Liberty 	2010	
-Tony Hawk's Pro Skater 2 	2000	
+publisher = "Nintendo" OR publisher = "Activision";
 
 -- Opdracht 10
 127.0.0.1/mod-mysql-basic-opdracht/videogamesales/		http://localhost/phpmyadmin/index.php?route=/database/sql&db=mod-mysql-basic-opdracht
@@ -227,4 +194,4 @@ DELETE FROM videogamesales WHERE genre = "Adventure" AND publisher = "Nintendo"
 DELETE FROM videogamesales WHERE publisher = "Nintendo" AND Global_Sales < 1000
 
 -- Opdracht 15
-DELETE FROM videogamesales WHERE year = 1997 OR NA_Sales > 200000
+DELETE FROM videogamesales WHERE year = 1997 AND NA_Sales > 200000;
