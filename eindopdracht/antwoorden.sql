@@ -166,7 +166,7 @@ SELECT COUNT(*) FROM videogamesales WHERE publisher = "nintendo";
 228	
 
 -- Opdracht 9
-publisher = "Nintendo" OR publisher = "Activision";
+SELECT name,year FROM videogames WHERE genre="racing" AND publisher = "Nintendo" OR publisher = "Activision" AND genre="racing";
 
 -- Opdracht 10
 127.0.0.1/mod-mysql-basic-opdracht/videogamesales/		http://localhost/phpmyadmin/index.php?route=/database/sql&db=mod-mysql-basic-opdracht
@@ -185,7 +185,7 @@ SELECT ROUND(AVG(NA_Sales)) AS Gemiddelde_aantal_verkoop_Noord_Amerika, ROUND(AV
 DELETE FROM videogamesales WHERE name="Halo 2" AND platform="XB"
 
 -- Opdracht 12
-DELETE FROM videogamesales WHERE year = 2012 OR publisher = "ubisoft"
+DELETE FROM videogamesales WHERE year = 2012 OR publisher = "Ubisoft"
 -- Opdracht 13
 
 DELETE FROM videogamesales WHERE genre = "Adventure" AND publisher = "Nintendo"
